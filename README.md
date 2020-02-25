@@ -1,5 +1,6 @@
 # shared-dependencies
-The shared dependencies for all the microfrontends.
+
+[![CircleCI](https://circleci.com/gh/vue-microfrontends/shared-dependencies.svg?style=svg)](https://circleci.com/gh/vue-microfrontends/shared-dependencies)
 
 ## What is this?
 
