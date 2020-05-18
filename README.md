@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This is an example microfrontend repo demonstrating how to use [single-spa](https://single-spa.js.org). You can see the code running at https://react.microfrontends.app.
+This is an example microfrontend repo demonstrating how to use [single-spa](https://single-spa.js.org). You can see the code running at https://vue.microfrontends.app/.
 
 ## How does it work?
 
@@ -12,7 +12,7 @@ This is an example microfrontend repo demonstrating how to use [single-spa](http
 
 This repository contains an [import map](https://github.com/WICG/import-maps/) that controls the shared libraries between all microfrontends. The full, deployed import map is visible at https://vue.microfrontends.app/importmap.json.
 
-Whenever a pull request is merged to master, [CircleCI deploys the import map](https://circleci.com/gh/react-microfrontends/shared-dependencies). Deployments for this project are completely independent of deployments for any other module.
+Whenever a pull request is merged to master, [CircleCI deploys the import map](https://circleci.com/gh/vue-microfrontends/shared-dependencies). Deployments for this project are completely independent of deployments for any other module.
 
 ## Adapting for your organization
 
