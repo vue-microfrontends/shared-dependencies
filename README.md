@@ -1,18 +1,18 @@
 # shared-dependencies
 
-[![CircleCI](https://circleci.com/gh/vue-microfrontends/shared-dependencies.svg?style=svg)](https://circleci.com/gh/vue-microfrontends/shared-dependencies)
+An import map of shared dependencies for vue microfrontends
 
 ## What is this?
 
-This is an example microfrontend repo demonstrating how to use [single-spa](https://single-spa.js.org). You can see the code running at https://vue.microfrontends.app/.
+This is an example microfrontend repo demonstrating how to use [single-spa](https://single-spa.js.org). You can see the code running at https://vue.microfrontends.app. The full, deployed import map is visible at https://vue.microfrontends.app/importmap.json.
 
 ## How does it work?
 
 [Full article](https://single-spa.js.org/docs/recommended-setup)
 
-This repository contains an [import map](https://github.com/WICG/import-maps/) that controls the shared libraries between all microfrontends. The full, deployed import map is visible at https://vue.microfrontends.app/importmap.json.
+This repository contains `importmap-template.json` and `global-scripts.json` files which are built via a Github action into a dependencies folder that is uploaded to the vue.microfrontends.app public CDN. The import-map-template.json allows for specifying which npm packages and versions are available in the shared import map, as well as for scoped package dependencies to allow for specific microfrontends to use different versions. The `global-scripts.json` file is a list of npm packages that are self-hosted on the vue.microfrontends.app domain, referenced within the root-config.
 
-Whenever a pull request is merged to master, [CircleCI deploys the import map](https://circleci.com/gh/vue-microfrontends/shared-dependencies). Deployments for this project are completely independent of deployments for any other module.
+Whenever a pull request is merged to main, a Github workflow auto-deploys the updated shared dependencies
 
 ## Adapting for your organization
 
