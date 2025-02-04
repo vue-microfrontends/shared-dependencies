@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "single-spa": "7.0.0-beta.1",
+    "vue": "3.5.13",
+    "vue-router": "4.5.0",
+    "hookable": "5.5.3",
+    "perfect-debounce": "1.0.0",
+    "@vue/devtools-kit": "7.7.1",
+    "@vue/devtools-api": "7.7.1",
+    "@vue/devtools-shared": "7.7.1",
+    "birpc": "2.0.19"
+  }
+}
